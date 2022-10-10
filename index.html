@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App_name_here</title>
+    <script  defer src="http://localhost:0005/socket.io/socket.io.js"></script>
+    <script  defer src="js/client.js"></script>
+    
+    <link rel="stylesheet" href = "css/style.css">
+</head>
+<body>
+    <section class="sec">
+        <nav>
+            <img class="logo" src="images.png" alt="">
+
+        </nav>
+        <div class="toggle">
+            
+        </div>
+        <div class="container">
+            
+        </div>
+        <div class="send">
+            <form action="#" id="send-container">
+                <input type="text" name="messageinput" id="messageinput">
+                <button class="btn" type="submit"> Send </button>
+            </form>
+        </div>
+
+        
+    </section>
+    <script>
+        const sec = document.querySelector('.sec');
+        const toggle = document.querySelector('.toggle');
+        toggle.onclick = function(){
+            sec.classList.toggle('dark')
+        }
+    </script>
+</body>
+</html>
